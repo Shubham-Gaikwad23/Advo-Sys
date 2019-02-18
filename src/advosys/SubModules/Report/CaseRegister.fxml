@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="573.0" prefWidth="667.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advosys.SubModules.Report.CaseRegisterController">
+    <stylesheets>
+        <URL value="@caseregister.css" />
+    </stylesheets>
+    <children>
+        <TableView fx:id="table" layoutX="14.0" layoutY="14.0" prefHeight="543.0" prefWidth="643.0">
+            <columns>
+                <TableColumn fx:id="caseTitle" prefWidth="107.0" text="Case title" />
+                <TableColumn fx:id="clientID" prefWidth="104.0" text="Client ID" />
+                <TableColumn fx:id="proLaw" prefWidth="146.0" text="Provision of law" />
+                <TableColumn fx:id="cause" minWidth="0.0" prefWidth="169.0" text="Opposite cause" />
+                <TableColumn fx:id="date" prefWidth="113.0" text="Registration date" />
+            <TableColumn fx:id="clientName1" prefWidth="104.0" text="Client name" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

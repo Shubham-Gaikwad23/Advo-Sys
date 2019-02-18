@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="284.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advosys.SubModules.About.AboutProjectController">
+    <stylesheets>
+        <URL value="@aboutproject.css" />
+    </stylesheets>
+    <children>
+        <Label layoutX="14.0" layoutY="26.0" prefHeight="17.0" prefWidth="138.0" text="Project name           : " />
+        <Label layoutX="163.0" layoutY="26.0" prefHeight="17.0" prefWidth="211.0" text="Advocate System" />
+        <Label layoutX="14.0" layoutY="55.0" prefHeight="17.0" prefWidth="138.0" text="Abstract                   :" />
+        <TextArea editable="false" layoutX="160.0" layoutY="55.0" prefHeight="132.0" prefWidth="428.0" text="Advocate System is software for advocates to maintain their office. This software is very easy to operate and light on system tool to maintain information about clients, cases, hearings, rulings, accounts, etc." wrapText="true" />
+        <Label layoutX="14.0" layoutY="204.0" prefHeight="17.0" prefWidth="138.0" text="GUI designed using   :" />
+        <Label layoutX="160.0" layoutY="204.0" prefHeight="17.0" prefWidth="166.0" text="JavaFX  ( Ant API version 1.3 )" />
+        <Label layoutX="15.0" layoutY="251.0" prefHeight="17.0" prefWidth="120.0" text="Project members       :" />
+        <Label layoutX="160.0" layoutY="251.0" prefHeight="17.0" prefWidth="395.0" text="Shubham Gaikwad, Vaibhav Rane, Vishal Kamble, Akshay Thakar" />
+    </children>
+</AnchorPane>

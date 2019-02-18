@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="481.0" prefWidth="1200.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advosys.SubModules.Case.ProceedingController">
+    <stylesheets>
+        <URL value="@proceeding.css" />
+    </stylesheets>
+    <children>
+        <Separator layoutX="599.0" layoutY="14.0" orientation="VERTICAL" prefHeight="417.0" prefWidth="11.0" />
+        <Label layoutX="13.0" layoutY="42.0" text="Client name" />
+        <ComboBox fx:id="clientName" layoutX="86.0" layoutY="38.0" prefHeight="25.0" prefWidth="268.0" />
+        <ComboBox fx:id="caseTitle" layoutX="86.0" layoutY="75.0" prefHeight="25.0" prefWidth="268.0" />
+        <ComboBox fx:id="clientID" layoutX="86.0" layoutY="114.0" prefHeight="25.0" prefWidth="268.0" />
+        <ComboBox fx:id="caseID" layoutX="86.0" layoutY="153.0" prefHeight="25.0" prefWidth="268.0" />
+        <Label layoutX="13.0" layoutY="79.0" text="Case title" />
+        <Label layoutX="13.0" layoutY="118.0" text="Client ID" />
+        <Label layoutX="13.0" layoutY="157.0" text="Case ID" />
+        <Label layoutX="277.0" layoutY="192.0" text="Synopsis" />
+        <TextArea fx:id="synopsis" layoutX="17.0" layoutY="216.0" prefHeight="207.0" prefWidth="567.0" />
+        <Label layoutX="626.0" layoutY="50.0" text="Proceeding date" />
+        <Label layoutX="626.0" layoutY="85.0" text="Proceeding summary" />
+        <TextArea fx:id="summary" layoutX="759.0" layoutY="91.0" prefHeight="133.0" prefWidth="424.0" />
+        <Label layoutX="626.0" layoutY="242.0" text="Next hearing date" />
+        <Label layoutX="626.0" layoutY="282.0" text="Disposal date" />
+        <TextArea fx:id="result" layoutX="759.0" layoutY="328.0" prefHeight="93.0" prefWidth="424.0" />
+        <Label layoutX="626.0" layoutY="322.0" text="Result" />
+        <Button fx:id="submit" defaultButton="true" layoutX="1129.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleSubmitAction" text="Submit" />
+        <Separator layoutX="6.0" layoutY="429.0" prefHeight="11.0" prefWidth="1183.0" />
+      <DatePicker fx:id="proceedingDate" layoutX="759.0" layoutY="46.0" prefHeight="25.0" prefWidth="178.0" />
+      <DatePicker fx:id="hearingDate" layoutX="759.0" layoutY="238.0" prefHeight="25.0" prefWidth="178.0" />
+      <DatePicker fx:id="disposalDate" layoutX="759.0" layoutY="278.0" prefHeight="25.0" prefWidth="178.0" />
+      <Separator layoutX="13.0" layoutY="429.0" prefHeight="11.0" prefWidth="1171.0" />
+      <Label fx:id="status" layoutX="19.0" layoutY="451.0" prefHeight="17.0" prefWidth="545.0" />
+    </children>
+</AnchorPane>

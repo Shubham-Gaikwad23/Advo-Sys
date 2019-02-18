@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="475.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advosys.SubModules.Client.EntryController">
+    <stylesheets>
+        <URL value="@cliententry.css" />
+    </stylesheets>
+    <children>
+        <Label layoutX="546.0" layoutY="46.0" text="Last" />
+        <Label layoutX="280.0" layoutY="46.0" text="Middle" />
+        <Label layoutX="12.0" layoutY="46.0" text="First" />
+        <TextField fx:id="firstName" layoutX="56.0" layoutY="42.0" prefHeight="25.0" prefWidth="192.0" />
+        <TextField fx:id="middleName" layoutX="325.0" layoutY="42.0" prefHeight="25.0" prefWidth="192.0" />
+        <TextField fx:id="lastName" layoutX="581.0" layoutY="42.0" prefHeight="25.0" prefWidth="192.0" />
+        <Label layoutX="87.0" layoutY="14.0" text="Name" />
+        <Separator layoutX="130.0" layoutY="14.0" prefHeight="17.0" prefWidth="660.0" />
+        <Separator layoutX="12.0" layoutY="21.0" prefHeight="0.0" prefWidth="69.0" />
+        <Separator layoutX="12.0" layoutY="106.0" prefHeight="0.0" prefWidth="69.0" />
+        <Separator layoutX="130.0" layoutY="99.0" prefHeight="17.0" prefWidth="660.0" />
+        <Label layoutX="87.0" layoutY="99.0" text="Contact" />
+        <TextField fx:id="mobile" layoutX="56.0" layoutY="127.0" prefHeight="25.0" prefWidth="192.0" />
+        <TextField fx:id="landline" layoutX="325.0" layoutY="127.0" prefHeight="25.0" prefWidth="192.0" />
+        <TextField fx:id="email" layoutX="581.0" layoutY="127.0" prefHeight="25.0" prefWidth="192.0" />
+        <TextArea fx:id="address" layoutX="56.0" layoutY="201.0" prefHeight="90.0" prefWidth="720.0" />
+        <Label layoutX="12.0" layoutY="131.0" text="Mobile" />
+        <Label layoutX="276.0" layoutY="131.0" text="Landline" />
+        <Label layoutX="542.0" layoutY="131.0" text="Email" />
+        <Label layoutX="538.0" layoutY="309.0" text="Pincode" />
+        <Label layoutX="274.0" layoutY="309.0" text="State" />
+        <Label layoutX="13.0" layoutY="309.0" text="City" />
+        <TextField fx:id="city" layoutX="59.0" layoutY="305.0" prefHeight="25.0" prefWidth="192.0" />
+        <TextField fx:id="state" layoutX="317.0" layoutY="305.0" prefHeight="25.0" prefWidth="192.0" />
+        <TextField fx:id="pincode" layoutX="595.0" layoutY="305.0" prefHeight="25.0" prefWidth="180.0" />
+        <Separator layoutX="12.0" layoutY="169.0" prefHeight="17.0" prefWidth="776.0" />
+        <Label layoutX="10.0" layoutY="201.0" text="Address" />
+        <Label layoutX="86.0" layoutY="354.0" text="Personal" />
+        <Separator layoutX="137.0" layoutY="354.0" prefHeight="17.0" prefWidth="652.0" />
+        <Separator layoutX="11.0" layoutY="361.0" prefHeight="0.0" prefWidth="69.0" />
+        <Label layoutX="10.0" layoutY="392.0" text="Salary (PA)" />
+        <TextField fx:id="salary" layoutX="78.0" layoutY="388.0" prefHeight="25.0" prefWidth="154.0" />
+        <TextField fx:id="occupation" layoutX="329.0" layoutY="388.0" prefHeight="25.0" prefWidth="180.0" />
+        <Label layoutX="261.0" layoutY="392.0" text="Occupation" />
+        <Label layoutX="537.0" layoutY="392.0" text="Gender" />
+        <ChoiceBox fx:id="gender" layoutX="595.0" layoutY="388.0" prefHeight="25.0" prefWidth="180.0" />
+        <Separator layoutX="13.0" layoutY="421.0" prefHeight="17.0" prefWidth="776.0" />
+        <Button defaultButton="true" layoutX="721.0" layoutY="438.0" mnemonicParsing="false" onAction="#handleClientEntryAction" text="Submit" />
+        <Button cancelButton="true" layoutX="651.0" layoutY="438.0" mnemonicParsing="false" onAction="#handleCancelAction" text="Cancel" />
+      <Label fx:id="status" layoutX="18.0" layoutY="442.0" prefHeight="17.0" prefWidth="491.0" />
+      <Label fx:id="status" layoutX="17.0" layoutY="442.0" prefHeight="17.0" prefWidth="447.0" />
+    </children>
+</AnchorPane>

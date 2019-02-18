@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="262.0" prefWidth="345.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advosys.SubModules.Client.SearchController">
+    <stylesheets>
+        <URL value="@search.css" />
+    </stylesheets>
+    <children>
+        <Label layoutX="12.0" layoutY="120.0" text="Last" />
+        <Label layoutX="12.0" layoutY="74.0" text="Middle" />
+        <Label layoutX="11.0" layoutY="25.0" text="First" />
+        <ComboBox fx:id="firstName" layoutX="94.0" layoutY="21.0" prefHeight="25.0" prefWidth="232.0" />
+        <ComboBox fx:id="middleName" layoutX="94.0" layoutY="70.0" prefHeight="25.0" prefWidth="232.0" />
+        <ComboBox fx:id="lastName" layoutX="94.0" layoutY="116.0" prefHeight="25.0" prefWidth="232.0" />
+        <Separator layoutX="12.0" layoutY="151.0" prefHeight="17.0" prefWidth="322.0" />
+        <Button layoutX="279.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleSearchAction" text="Search" />
+        <ComboBox fx:id="client_id" layoutX="94.0" layoutY="178.0" prefHeight="25.0" prefWidth="232.0" />
+        <Label layoutX="16.0" layoutY="182.0" text="Client ID" />
+    </children>
+</AnchorPane>

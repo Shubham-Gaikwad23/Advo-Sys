@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="610.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advosys.SubModules.Report.CaseHistoryController">
+    <stylesheets>
+        <URL value="@casehistory.css" />
+    </stylesheets>
+    <children>
+        <Label layoutX="21.0" layoutY="29.0" text="Client name" />
+        <ComboBox fx:id="clientName" layoutX="108.0" layoutY="25.0" prefWidth="150.0" />
+        <ComboBox fx:id="caseTitle" layoutX="414.0" layoutY="25.0" prefWidth="150.0" />
+        <Label layoutX="327.0" layoutY="29.0" text="Case title" />
+        <Separator layoutX="12.0" layoutY="96.0" prefHeight="11.0" prefWidth="578.0" />
+        <TableView fx:id="table" layoutX="8.0" layoutY="116.0" prefHeight="310.0" prefWidth="585.0">
+            <columns>
+                <TableColumn fx:id="proDate" prefWidth="112.0" text="Proceeding date" />
+                <TableColumn fx:id="summary" prefWidth="227.0" text="Proceeding summary" />
+                <TableColumn fx:id="hearingDate" prefWidth="127.0" text="Next hearing date" />
+                <TableColumn fx:id="result" prefWidth="115.0" text="Result" />
+            </columns>
+        </TableView>
+        <Button layoutX="544.0" layoutY="444.0" mnemonicParsing="false" onAction="#handleSearchAction" text="Search" />
+        <Label layoutX="329.0" layoutY="70.0" text="Case ID" />
+        <ComboBox fx:id="caseID" layoutX="414.0" layoutY="66.0" prefWidth="150.0" />
+        <ComboBox fx:id="clientID" layoutX="108.0" layoutY="66.0" prefWidth="150.0" />
+        <Label layoutX="21.0" layoutY="70.0" text="Client ID" />
+      <Separator layoutX="2.0" layoutY="431.0" prefHeight="11.0" prefWidth="604.0" />
+    </children>
+</AnchorPane>

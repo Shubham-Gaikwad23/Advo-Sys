@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="516.0" prefWidth="914.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advosys.SubModules.Case.InfoController">
+    <stylesheets>
+        <URL value="@info.css" />
+    </stylesheets>
+    <children>
+        <Label layoutX="141.0" layoutY="21.0" text="Client selection" />
+        <Separator layoutX="233.0" layoutY="21.0" prefHeight="17.0" prefWidth="652.0" />
+        <Separator layoutX="9.0" layoutY="21.0" prefHeight="17.0" prefWidth="125.0" />
+        <Label layoutX="9.0" layoutY="57.0" text="First name" />
+        <ComboBox fx:id="firstName" layoutX="72.0" layoutY="53.0" prefHeight="25.0" prefWidth="165.0" />
+        <ComboBox fx:id="middleName" layoutX="331.0" layoutY="53.0" prefHeight="25.0" prefWidth="165.0" />
+        <ComboBox fx:id="lastName" layoutX="564.0" layoutY="53.0" prefHeight="25.0" prefWidth="165.0" />
+        <ComboBox fx:id="clientID" layoutX="791.0" layoutY="53.0" prefHeight="25.0" prefWidth="107.0" />
+        <Label layoutX="279.0" layoutY="57.0" text="Middle" />
+        <Label layoutX="521.0" layoutY="57.0" text="Last" />
+        <Label layoutX="760.0" layoutY="57.0" text="ID" />
+        <Separator layoutX="241.0" layoutY="103.0" prefHeight="17.0" prefWidth="644.0" />
+        <Separator layoutX="11.0" layoutY="103.0" prefHeight="17.0" prefWidth="125.0" />
+        <Label layoutX="143.0" layoutY="103.0" text="Case information" />
+        <Label layoutX="11.0" layoutY="154.0" text="Title" />
+        <TextField fx:id="caseTitle" editable="false" layoutX="114.0" layoutY="150.0" prefHeight="25.0" prefWidth="165.0" />
+        <TextField fx:id="caseType" editable="false" layoutX="454.0" layoutY="150.0" prefHeight="25.0" prefWidth="165.0" />
+        <ComboBox fx:id="caseID" layoutX="791.0" layoutY="150.0" prefHeight="25.0" prefWidth="107.0" />
+        <TextField fx:id="date" editable="false" layoutX="114.0" layoutY="207.0" prefHeight="25.0" prefWidth="165.0" />
+        <Label layoutX="419.0" layoutY="154.0" text="Type" />
+        <Label layoutX="717.0" layoutY="154.0" text="Case ID" />
+        <TextField fx:id="proOfLaw" editable="false" layoutX="454.0" layoutY="207.0" prefHeight="25.0" prefWidth="165.0" />
+        <Label layoutX="361.0" layoutY="211.0" text="Provision of law" />
+        <Label layoutX="11.0" layoutY="211.0" text="Registration date" />
+        <Label layoutX="9.0" layoutY="261.0" text="File on behalf of" />
+        <TextField fx:id="behalfOf" editable="false" layoutX="114.0" layoutY="257.0" prefHeight="25.0" prefWidth="165.0" />
+        <Label layoutX="367.0" layoutY="261.0" text="Opposite cause" />
+        <TextField fx:id="oppositeCause" editable="false" layoutX="454.0" layoutY="257.0" prefHeight="25.0" prefWidth="165.0" />
+        <Label layoutX="141.0" layoutY="304.0" text="Synopsis" />
+        <Separator layoutX="9.0" layoutY="304.0" prefHeight="17.0" prefWidth="125.0" />
+        <Separator layoutX="196.0" layoutY="304.0" prefHeight="17.0" prefWidth="701.0" />
+        <TextArea fx:id="synopsis" editable="false" layoutX="14.0" layoutY="329.0" prefHeight="129.0" prefWidth="884.0" />
+        <Button fx:id="close" cancelButton="true" layoutX="782.0" layoutY="484.0" mnemonicParsing="false" onAction="#handleCloseAction" text="Close" />
+        <Separator layoutX="3.0" layoutY="467.0" prefHeight="17.0" prefWidth="895.0" />
+      <Button fx:id="search" defaultButton="true" layoutX="845.0" layoutY="484.0" mnemonicParsing="false" onAction="#handleSearchAction" text="Search" />
+    </children>
+</AnchorPane>

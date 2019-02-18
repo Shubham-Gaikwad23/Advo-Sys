@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="556.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advosys.SubModules.Report.ClientRegisterController">
+    <stylesheets>
+        <URL value="@clientregister.css" />
+    </stylesheets>
+    <children>
+        <TableView fx:id="table" editable="true" layoutX="12.0" layoutY="14.0" prefHeight="526.0" prefWidth="974.0">
+            <columns>
+                <TableColumn fx:id="firstName" prefWidth="75.0" text="First name" />
+                <TableColumn fx:id="middleName" prefWidth="98.0" text="Middle name" />
+                <TableColumn fx:id="lastName" prefWidth="89.0" text="Last name" />
+                <TableColumn fx:id="mobile" prefWidth="96.0" text="Mobile no." />
+                <TableColumn fx:id="gender" prefWidth="85.0" text="Gender" />
+                <TableColumn fx:id="email" prefWidth="142.0" text="Email" />
+                <TableColumn fx:id="city" prefWidth="97.0" text="City" />
+                <TableColumn fx:id="state" prefWidth="90.0" text="State" />
+                <TableColumn fx:id="pincode" prefWidth="89.0" text="Pincode" />
+                <TableColumn fx:id="salary" prefWidth="112.0" text="Salary" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

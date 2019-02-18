@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="640.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advosys.MainController">
+    <stylesheets>
+        <URL value="@main.css" />
+    </stylesheets>
+    <children>
+        <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="640.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Client">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleCreateNewClientAction" text="Client entry" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleUpdateClientAction" text="Client info" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Case">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleCreateNewCaseAction" text="Case entry" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleCaseProceedingAction" text="Case proceeding" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleCaseInfoAction" text="Case info" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Account">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleFeesEntryAction" text="Fees entry" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Report">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleClientRegisterAction" text="Client register" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleCaseRegisterAction" text="Case register" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleCaseHistoryAction" text="Case history" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="User">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleModifyUserAction" text="Modify" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="About">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleAboutProjectAction" text="Project" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <ImageView fx:id="backgroundEmblem" fitHeight="441.0" fitWidth="422.0" layoutX="178.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@res/images/background-emblem.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

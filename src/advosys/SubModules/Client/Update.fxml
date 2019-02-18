@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="476.0" prefWidth="792.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advosys.SubModules.Client.UpdateController">
+    <stylesheets>
+        <URL value="@update.css" />
+    </stylesheets>
+    <children>
+        <Label layoutX="542.0" layoutY="46.0" text="Last" />
+        <Label layoutX="276.0" layoutY="46.0" text="Middle" />
+        <Label layoutX="8.0" layoutY="46.0" text="First" />
+        <TextField fx:id="firstName" editable="false" layoutX="52.0" layoutY="42.0" prefHeight="25.0" prefWidth="192.0" />
+        <TextField fx:id="middleName" editable="false" layoutX="321.0" layoutY="42.0" prefHeight="25.0" prefWidth="192.0" />
+        <TextField fx:id="lastName" editable="false" layoutX="577.0" layoutY="42.0" prefHeight="25.0" prefWidth="192.0" />
+        <Label layoutX="83.0" layoutY="14.0" text="Name" />
+        <Separator layoutX="126.0" layoutY="14.0" prefHeight="17.0" prefWidth="660.0" />
+        <Separator layoutX="8.0" layoutY="21.0" prefHeight="0.0" prefWidth="69.0" />
+        <Separator layoutX="8.0" layoutY="106.0" prefHeight="0.0" prefWidth="69.0" />
+        <Separator layoutX="126.0" layoutY="99.0" prefHeight="17.0" prefWidth="660.0" />
+        <Label layoutX="83.0" layoutY="99.0" text="Contact" />
+        <TextField fx:id="mobile" editable="false" layoutX="52.0" layoutY="127.0" prefHeight="25.0" prefWidth="192.0" />
+        <TextField fx:id="landline" editable="false" layoutX="321.0" layoutY="127.0" prefHeight="25.0" prefWidth="192.0" />
+        <TextField fx:id="email" editable="false" layoutX="577.0" layoutY="127.0" prefHeight="25.0" prefWidth="192.0" />
+        <TextArea fx:id="address" editable="false" layoutX="52.0" layoutY="201.0" prefHeight="90.0" prefWidth="720.0" />
+        <Label layoutX="8.0" layoutY="131.0" text="Mobile" />
+        <Label layoutX="272.0" layoutY="131.0" text="Landline" />
+        <Label layoutX="538.0" layoutY="131.0" text="Email" />
+        <Label layoutX="534.0" layoutY="309.0" text="Pincode" />
+        <Label layoutX="270.0" layoutY="309.0" text="State" />
+        <Label layoutX="9.0" layoutY="309.0" text="City" />
+        <TextField fx:id="city" editable="false" layoutX="55.0" layoutY="305.0" prefHeight="25.0" prefWidth="192.0" />
+        <TextField fx:id="state" editable="false" layoutX="313.0" layoutY="305.0" prefHeight="25.0" prefWidth="192.0" />
+        <TextField fx:id="pincode" editable="false" layoutX="591.0" layoutY="305.0" prefHeight="25.0" prefWidth="180.0" />
+        <Separator layoutX="8.0" layoutY="169.0" prefHeight="17.0" prefWidth="776.0" />
+        <Label layoutX="6.0" layoutY="201.0" text="Address" />
+        <Label layoutX="82.0" layoutY="354.0" text="Personal" />
+        <Separator layoutX="133.0" layoutY="354.0" prefHeight="17.0" prefWidth="652.0" />
+        <Separator layoutX="7.0" layoutY="361.0" prefHeight="0.0" prefWidth="69.0" />
+        <Label layoutX="6.0" layoutY="392.0" text="Salary (PA)" />
+        <TextField fx:id="salary" editable="false" layoutX="74.0" layoutY="388.0" prefHeight="25.0" prefWidth="154.0" />
+        <TextField fx:id="occupation" editable="false" layoutX="325.0" layoutY="388.0" prefHeight="25.0" prefWidth="180.0" />
+        <Label layoutX="257.0" layoutY="392.0" text="Occupation" />
+        <Label layoutX="533.0" layoutY="392.0" text="Gender" />
+        <ChoiceBox fx:id="gender" disable="true" layoutX="591.0" layoutY="388.0" prefHeight="25.0" prefWidth="180.0" />
+        <Separator layoutX="9.0" layoutY="421.0" prefHeight="17.0" prefWidth="776.0" />
+        <Button defaultButton="true" layoutX="717.0" layoutY="438.0" mnemonicParsing="false" onAction="#handleSubmitAction" text="Submit" />
+        <Button cancelButton="true" layoutX="650.0" layoutY="438.0" mnemonicParsing="false" onAction="#handleCancelAction" text="Cancel" />
+        <Button layoutX="573.0" layoutY="438.0" mnemonicParsing="false" onAction="#handleEditAction" text="Edit" />
+        <Button layoutX="507.0" layoutY="438.0" mnemonicParsing="false" onAction="#handleSearchAction" text="Search" />
+        <Label fx:id="clientID" layoutX="16.0" layoutY="442.0" prefHeight="17.0" prefWidth="192.0" />
+    </children>
+</AnchorPane>

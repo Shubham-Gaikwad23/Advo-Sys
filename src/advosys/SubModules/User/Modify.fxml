@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="197.0" prefWidth="358.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advosys.SubModules.User.ModifyController">
+    <stylesheets>
+        <URL value="@modify.css" />
+    </stylesheets>
+    <children>
+        <Label layoutX="16.0" layoutY="32.0" text="New user name" />
+        <Label layoutX="14.0" layoutY="79.0" text="New password" />
+        <Label layoutX="16.0" layoutY="122.0" text="Re-type password" />
+        <TextField fx:id="newUserName" layoutX="138.0" layoutY="28.0" prefHeight="25.0" prefWidth="200.0" />
+        <PasswordField fx:id="newPassword" layoutX="138.0" layoutY="75.0" prefHeight="25.0" prefWidth="200.0" />
+        <PasswordField fx:id="retype" layoutX="138.0" layoutY="118.0" prefHeight="25.0" prefWidth="200.0" />
+        <Button fx:id="submit" layoutX="284.0" layoutY="163.0" mnemonicParsing="false" onAction="#handleSubmitAction" text="Submit" />
+    </children>
+</AnchorPane>
